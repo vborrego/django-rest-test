@@ -1,0 +1,9 @@
+.space{margin-bottom: 15px; margin-top:15px;}
+.button{width: 100%;}
+.space-bottom{margin-bottom:15px;}
+.appTitle{text-align: center;}
+.chuckNorrisQuote{text-align: center;}
+.itemTask{clear:both;float:left;width:100%}
+.taskName{float:left;width:70%;}
+.taskDelete{float:left;width:15%;}
+.taskDone{float:right;width:15%;text-align:right;}
