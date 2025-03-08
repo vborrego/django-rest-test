@@ -60,6 +60,7 @@ class BackendService {
     }
 
     public getHelloWorld(callback: Function, user: string, password: string) {
+        console.log("Called getHelloWorld ");
         let config: AxiosRequestConfig = {};
         config.auth = { username: user, password: password };
 

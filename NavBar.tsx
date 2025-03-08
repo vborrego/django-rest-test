@@ -4,6 +4,7 @@ interface NavBarState {
 }
 
 interface NavBarProps {
+  children?: React.ReactNode;
 }
 
 export default class NavItem extends React.Component<NavBarProps, NavBarState> {
@@ -25,6 +26,8 @@ export default class NavItem extends React.Component<NavBarProps, NavBarState> {
 
     public render() {
         // do not call set state in render !
+        let brand: Element = document.querySelector(".navbar-brand");
+        brand.textContent = "Django REST test";
 
         return (
             <ul className="navbar-nav mr-auto" id="nav-items">

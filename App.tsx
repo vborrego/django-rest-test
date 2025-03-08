@@ -7,6 +7,7 @@ interface AppState {
 
 interface AppProps {
     title: string;
+    children?: React.ReactNode;
 }
 
 export default class App extends React.Component<AppProps, AppState> {
@@ -19,7 +20,7 @@ export default class App extends React.Component<AppProps, AppState> {
     }
 
     componentDidMount() {
-        pubSubResource.notify("UpdateTitle Set up title");
+        pubSubResource.notify("UpdateTitle Title defined here");
     }
 
     componentWillUnmount() {
